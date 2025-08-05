@@ -6,6 +6,25 @@
     "contact": "Contacto",
     "experience": "Experiencia",
     "skills": "Habilidades"
+  },
+  "hero": {
+    "title": "Hola, soy <b>{name}</b>",
+    "description": "Desarrollador web apasionado por crear experiencias digitales excepcionales.",
+    "contactme": "Contáctame",
+    "download": "Descargar CV"
+  },
+  "about":{
+    "title": "Acerca de mí",
+    "description": "Soy un desarrollador apasionado con más de {years} años de experiencia creando aplicaciones web modernas y soluciones digitales innovadoras. Me especializo en tecnologías como React, Node.js y bases de datos modernas.",
+    "description2": "Mi enfoque se centra en escribir código limpio, crear interfaces intuitivas y resolver problemas complejos de manera eficiente. Siempre estoy aprendiendo nuevas tecnologías y mejorando mis habilidades.",
+    "description3": " Cuando no estoy programando, disfruto de leer libros, contribuir a proyectos de código abierto y compartir conocimientos con la comunidad.",
+    "tag1": "Desarrollador",
+    "tag1Description":"Código limpio y eficiente con las mejores prácticas.",
+    "tag2": "Diseño",
+    "tag2Description":"Diseños atractivos y funcionales que mejoran la experiencia del usuario.",
+    "tag3": "Performance",
+    "tag3Description":"Optimización del rendimiento para aplicaciones rápidas y receptivas."
   }
+  
 }
 

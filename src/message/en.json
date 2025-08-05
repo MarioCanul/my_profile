@@ -6,5 +6,23 @@
       "contact": "Contact",
       "experience": "Experience",
       "skills": "Skills"
+   },
+   "hero": {
+      "title": "Hello, I'm {name}",
+      "description": "Web developer passionate about creating exceptional digital experiences.",
+      "contactme": "Contact me",
+      "download": "Download CV"
+   },
+   "about": {
+      "title": "About Me",
+      "description": "I am a passionate developer with over {years} years of experience creating modern web applications and innovative digital solutions. I specialize in technologies such as React, Node.js, and modern databases.",
+      "description2": "My focus is on writing clean code, creating intuitive interfaces, and solving complex problems efficiently. I am always learning new technologies and improving my skills.",
+      "description3": " When I'm not coding, I enjoy reading books, contributing to open-source projects, and sharing knowledge with the community.",
+      "tag1": "Developer",
+      "tag1Description": "Clean and efficient code with best practices.",
+      "tag2": "Design",
+      "tag2Description": "Attractive and functional designs that enhance user experience.",
+      "tag3": "Performance",
+      "tag3Description": "Performance optimization for fast and responsive applications."
    }
 }

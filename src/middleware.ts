@@ -7,10 +7,7 @@ import { updateSession } from '@/utils/supabase/updateSession';
 
 // Crea el middleware de next-intl con la configuración de rutas/idiomas
 const intlMiddleware = createIntlMiddleware(routing);
-
 export async function middleware(request: NextRequest) {
-   console.log('[middleware] Se ejecuta en:', request.nextUrl.pathname);
-
    // Ejecuta el middleware de next-intl
    const intlResponse = intlMiddleware(request);
 
@@ -20,6 +17,9 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-   matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
+   matcher: [
+      // Se ejecuta en todas las rutas EXCEPTO aquellas que tienen las siguientes extensiones o rutas
+      '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)).*)'
+   ]
 };
 

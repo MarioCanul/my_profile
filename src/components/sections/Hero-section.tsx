@@ -1,7 +1,10 @@
+'use client';
+import { useTranslations } from "next-intl";
 import { Button } from "../ui/Button";
 import { Github, Linkedin, Mail, Download } from "lucide-react"
 
 export function HeroSection() {
+   const t = useTranslations('hero');
    return (
       <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
          <div className="container mx-auto px-4 text-center">
@@ -12,19 +15,22 @@ export function HeroSection() {
                      alt="Hero Image" />
                </div>
                <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                  Hola soy <span className="text-primary"> Mario Canul</span>
+                  {t.rich('title', {
+                     name: "Mario Canul",
+                     b: (chunks) => <span className="text-primary">{chunks}</span>
+                  })}
                </h1>
                <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Desarrollador web apasionado por crear experiencias digitales excepcionales
+                  {t('description')}
                </p>
                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                   <Button size="lg" className="text-lg px-8">
                      <Mail className="mr-2 h-5 w-5" />
-                     Contáctame
+                     {t('contactme')}
                   </Button>
                   <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                      <Download className="mr-2 h-5 w-5" />
-                     Descargar CV
+                     {t('download')}
                   </Button>
                </div>
                <div className="flex justify-center space-x-6">
